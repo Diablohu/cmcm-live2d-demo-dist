@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+
+    <title>ux-live2d-demo</title>
+
+    <base target="_self">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- IE/Edge/Multi-engine -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!--koot-inject-metas-start--><!--koot-inject-metas-end--><link rel="shortcut icon" href="includes/webapp.6d322bea/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="includes/webapp.6d322bea/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="includes/webapp.6d322bea/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="includes/webapp.6d322bea/favicon-48x48.png"><link rel="manifest" href="includes/webapp.6d322bea/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0092f5"><meta name="application-name" content="ux-live2d-demo"><link rel="apple-touch-icon" sizes="57x57" href="includes/webapp.6d322bea/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="includes/webapp.6d322bea/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="includes/webapp.6d322bea/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="includes/webapp.6d322bea/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="includes/webapp.6d322bea/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="includes/webapp.6d322bea/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="includes/webapp.6d322bea/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="includes/webapp.6d322bea/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="includes/webapp.6d322bea/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="includes/webapp.6d322bea/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="includes/webapp.6d322bea/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="ux-live2d-demo"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-640x1136.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-750x1334.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-828x1792.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1125x2436.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1242x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1242x2688.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1536x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1668x2224.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1668x2388.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-2048x2732.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="includes/webapp.6d322bea/apple-touch-startup-image-1620x2160.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-1136x640.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-1334x750.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-1792x828.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2436x1125.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2208x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2688x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2048x1536.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2224x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2388x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2732x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="includes/webapp.6d322bea/apple-touch-startup-image-2160x1620.png"><link rel="icon" type="image/png" sizes="228x228" href="includes/webapp.6d322bea/coast-228x228.png"><meta name="msapplication-TileColor" content="#212121"><meta name="msapplication-TileImage" content="includes/webapp.6d322bea/mstile-144x144.png"><meta name="msapplication-config" content="includes/webapp.6d322bea/browserconfig.xml"><link rel="yandex-tableau-widget" href="includes/webapp.6d322bea/yandex-browser-manifest.json"><link rel="alternate" hreflang="zh" href="?hl=zh" /><link rel="alternate" hreflang="en" href="?hl=en" />
+    <style id="__koot-extracted-styles" type="text/css" data-koot-global>html{
+  -webkit-text-size-adjust:100%;
+  line-height:1.15;
+}
+body{
+  margin:0;
+}
+main{
+  display:block;
+}
+h1{
+  font-size:2em;
+  margin:.67em 0;
+}
+hr{
+  box-sizing:initial;
+  height:0;
+  overflow:visible;
+}
+pre{
+  font-family:monospace,monospace;
+  font-size:1em;
+}
+a{
+  background-color:initial;
+}
+abbr[title]{
+  border-bottom:none;
+  text-decoration:underline;
+  -webkit-text-decoration:underline dotted;
+          text-decoration:underline dotted;
+}
+b,strong{
+  font-weight:bolder;
+}
+code,kbd,samp{
+  font-family:monospace,monospace;
+  font-size:1em;
+}
+small{
+  font-size:80%;
+}
+sub,sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:initial;
+}
+sub{
+  bottom:-.25em;
+}
+sup{
+  top:-.5em;
+}
+img{
+  border-style:none;
+}
+button,input,optgroup,select,textarea{
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  margin:0;
+}
+button,input{
+  overflow:visible;
+}
+button,select{
+  text-transform:none;
+}
+[type=button],[type=reset],[type=submit],button{
+  -webkit-appearance:button;
+}
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{
+  border-style:none;
+  padding:0;
+}
+[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{
+  outline:1px dotted ButtonText;
+}
+fieldset{
+  padding:.35em .75em .625em;
+}
+legend{
+  box-sizing:border-box;
+  color:inherit;
+  display:table;
+  max-width:100%;
+  padding:0;
+  white-space:normal;
+}
+progress{
+  vertical-align:initial;
+}
+textarea{
+  overflow:auto;
+}
+[type=checkbox],[type=radio]{
+  box-sizing:border-box;
+  padding:0;
+}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{
+  height:auto;
+}
+[type=search]{
+  -webkit-appearance:textfield;
+  outline-offset:-2px;
+}
+[type=search]::-webkit-search-decoration{
+  -webkit-appearance:none;
+}
+::-webkit-file-upload-button{
+  -webkit-appearance:button;
+  font:inherit;
+}
+details{
+  display:block;
+}
+summary{
+  display:list-item;
+}
+[hidden],template{
+  display:none;
+}
+*,:after,:before{
+  box-sizing:inherit;
+}
+button,input,optgroup,option,select,textarea{
+  font-family:inherit;
+}
+input,textarea{
+  -webkit-user-select:auto;
+     -moz-user-select:auto;
+      -ms-user-select:auto;
+          user-select:auto;
+}
+body,html{
+  height:100%;
+  height:-webkit-fill-available;
+}
+html{
+  -webkit-text-decoration-skip:ink;
+  box-sizing:border-box;
+  color:#253137;
+  font-family:Roboto,SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,Microsoft YaHei UI,Microsoft YaHei,Hiragino Sans GB,sans-serif;
+  font-size:20px;
+          text-decoration-skip-ink:auto;
+  text-underline-position:under;
+}
+html[lang^=ja]{
+  font-family:Noto Sans JP,Lucida Grande,Hiragino Kaku Gothic ProN,Meiryo,Roboto,sans-serif;
+}
+body{
+  font-size:16px;
+  line-height:1.5em;
+  line-height:calc(4px + 2ex);
+  min-height:100vh;
+  min-height:-webkit-fill-available;
+}
+:first-child{
+  margin-top:0;
+}
+:last-child{
+  margin-bottom:0;
+}
+[disabled]{
+  cursor:default;
+  opacity:.5;
+  pointer-events:none;
+}
+
+</style>
+  </head>
+
+  <body class="koot-system">
+    <div id="root"><!-- REACT ROOT --></div>
+    <script type="text/javascript">
+      (()=>{var e={1389:(e,t,n)=>{var o,i;void 0===(i="function"==typeof(o=function(){"use strict";return function(e,t,n,o){if(e&&t&&n){var i=t.substr(0,1).toUpperCase()+t.substr(1),d=!1;return[t,"o"+i,"moz"+i,"webkit"+i,"ms"+i].some((function(e){return"on"+e in window&&(d=e),d})),e.addEventListener(d||t,n,o)}}})?o.call(t,n,t,e):o)||(e.exports=i)}},t={};function n(o){var i=t[o];if(void 0!==i)return i.exports;var d=t[o]={exports:{}};return e[o](d,d.exports,n),d.exports}n.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return n.d(t,{a:t}),t},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{"use strict";var e=n(1389),t=n.n(e);const o="UI_THEME";(()=>{if(window&&window.__IS_CLITICAL_INITED__)return!0;{let e="not-specified";const t=()=>{if(/iP(hone|od|ad)/.test(navigator.platform)){var e=navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);return[parseInt(e[1],10),parseInt(e[2],10),parseInt(e[3]||0,10)]}};if("object"==typeof navigator){const n=navigator.userAgent;/Android|HTC/i.test(n)?(window.isMobile=!0,e="android"):(/iPad/i.test(n)||/iPod|iPhone/i.test(n)||/Mobile/i.test(n)&&/Safari/i.test(n))&&(window.isMobile=!0,window.isIOS=!0,e="ios"),/UCBrowser/.test(n)&&(window.isUC=!0);const o=t();window.iOSversion=Array.isArray(o)?o[0]:void 0,Array.isArray(o)&&o[0]<10&&(window.isMobile=!0,window.isIOS=!0,window.isOldIOS=!0),window.isAlipay=/AlipayChannelId/.test(n)||/AlipayDefined/.test(n)||/AliApp/.test(n)||/AlipayClient/.test(n),window.isAliPay=window.isAlipay,window.isWechat=/MicroMessenger/.test(n),window.isWeChat=window.isWechat,window.isWX=window.isWechat,window.isWx=window.isWechat}window.isMobile&&document.documentElement.classList.add("is-mobile"),e&&document.documentElement.classList.add("platform-"+e)}document.addEventListener("DOMContentLoaded",(function(){var e;(e=document.createElement("canvas")).getContext&&e.getContext("2d")&&0===e.toDataURL("image/webp").indexOf("data:image/webp")&&document.documentElement.classList.add("webp");{const e=()=>{document.documentElement.classList.remove("is-offline")},t=()=>{document.documentElement.classList.add("is-offline")};window.addEventListener("online",e),window.addEventListener("offline",t),!1===navigator.onLine&&t()}document.documentElement.classList.add("is-hover"),window.PointerEvent&&(document.documentElement.addEventListener("pointerenter",(e=>{"mouse"===e.pointerType||"pen"===e.pointerType?document.documentElement.classList.add("is-hover"):document.documentElement.classList.remove("is-hover")})),document.documentElement.addEventListener("pointerleave",(()=>{document.documentElement.classList.remove("is-hover")}))),t()(document.body,"dragover",(()=>{document.documentElement.classList.add("is-dragging-over")})),["dragend","dragexit","dragleave","drop"].forEach((e=>{t()(document.body,e,(()=>{document.documentElement.classList.remove("is-dragging-over")}))}))})),"dark"===localStorage[o]||!(o in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("theme-dark"):document.documentElement.classList.remove("theme-dark"),window.__IS_CLITICAL_INITED__=!0})()})()})();
+    </script>
+    <script src="Core/live2dcubismcore.js"></script>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-circle-left3" viewBox="0 0 16 16">
+<title>circle-left3</title>
+<path d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8c-4.418 0-8 3.582-8 8s3.582 8 8 8zM8 1.5c3.59 0 6.5 2.91 6.5 6.5s-2.91 6.5-6.5 6.5c-3.59 0-6.5-2.91-6.5-6.5s2.91-6.5 6.5-6.5z"></path>
+<path d="M7.5 4l-4 4 4 4 1.5-1.5-1.5-1.5h4.5v-2h-4.5l1.5-1.5z"></path>
+</symbol>
+<symbol id="icon-circle-left4" viewBox="0 0 16 16">
+<title>circle-left4</title>
+<path d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM13 9h-5.5l2 2-1.5 1.5-4.5-4.5 4.5-4.5 1.5 1.5-2 2h5.5v2z"></path>
+</symbol>
+<symbol id="icon-new-tab" viewBox="0 0 16 16">
+<title>new-tab</title>
+<path d="M11 13h-8v-8h4.5l2-2h-8.5v12h12v-8.5l-2 2v4.5z"></path>
+<path d="M16 0h-6.5l2.5 2.5-7.5 7.5 1.5 1.5 7.5-7.5 2.5 2.5v-6.5z"></path>
+</symbol>
+<symbol id="icon-github" viewBox="0 0 16 16">
+<title>github</title>
+<path d="M8 0.198c-4.418 0-8 3.582-8 8 0 3.535 2.292 6.533 5.471 7.591 0.4 0.074 0.547-0.174 0.547-0.385 0-0.191-0.008-0.821-0.011-1.489-2.226 0.484-2.695-0.944-2.695-0.944-0.364-0.925-0.888-1.171-0.888-1.171-0.726-0.497 0.055-0.486 0.055-0.486 0.803 0.056 1.226 0.824 1.226 0.824 0.714 1.223 1.872 0.869 2.328 0.665 0.072-0.517 0.279-0.87 0.508-1.070-1.777-0.202-3.645-0.888-3.645-3.954 0-0.873 0.313-1.587 0.824-2.147-0.083-0.202-0.357-1.015 0.077-2.117 0 0 0.672-0.215 2.201 0.82 0.638-0.177 1.322-0.266 2.002-0.269 0.68 0.003 1.365 0.092 2.004 0.269 1.527-1.035 2.198-0.82 2.198-0.82 0.435 1.102 0.162 1.916 0.079 2.117 0.513 0.56 0.823 1.274 0.823 2.147 0 3.073-1.872 3.749-3.653 3.947 0.287 0.248 0.543 0.735 0.543 1.481 0 1.070-0.009 1.932-0.009 2.195 0 0.213 0.144 0.462 0.55 0.384 3.177-1.059 5.466-4.057 5.466-7.59 0-4.418-3.582-8-8-8z"></path>
+</symbol>
+</defs>
+</svg>
+
+    <script type="text/javascript" data-koot-entry="*run-first-spa-locales">window.__KOOT_SPA_LOCALE_FILE_MAP__ = {"zh":"includes/entry.b929e578a92c9a96e4f6.js","en":"includes/entry.7948e2f440a4c476cdb1.js"};</script><script type="text/javascript" src="includes/entry.7667849c2425b7247d6e.js" defer data-koot-entry="*run-first"></script><script type="text/javascript" src="includes/entry.87effa5ebe0a646b4ebe.js" defer data-koot-entry="client"></script><script type="text/javascript" src="includes/entry.9097ba689bb82bae8404.js" defer data-koot-entry="client"></script><script type="text/javascript" src="includes/entry.a99ec363b1d6ffba287e.js" defer data-koot-entry="client"></script><script id="__koot-pwa-register-sw" type="text/javascript">if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register("service-worker.js?koot=0.12",{scope: location.pathname}).catch(err => {console.log('👩‍💻 Service Worker SUPPORTED. ERROR', err)})});}else{console.log('👩‍💻 Service Worker not supported!')}</script>
+  </body>
+
+  </html>
+
+  <!-- rendered: 2024-11-13T09:41:45.838Z -->
+
+<!-- rendered by using koot.js 0.15.15 -->
