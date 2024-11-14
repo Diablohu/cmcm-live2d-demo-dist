@@ -3,8 +3,8 @@
     ".out": "/",
     ".entrypoints": {
         "critical": [
-            "includes/extract.424.0d81f4aa1d99a444cbeb.css",
-            "includes/entry.0d81f4aa1d99a444cbeb.js"
+            "includes/extract.424.40f99eafcf05f6fc3188.css",
+            "includes/entry.40f99eafcf05f6fc3188.js"
         ],
         "__KOOT__CLIENT__RUN__FIRST__": [
             "includes/entry.7667849c2425b7247d6e.js"
@@ -17,21 +17,21 @@
         ],
         "client": [
             "includes/entry.6208ec8529f18d3db772.js",
-            "includes/entry.d24a3f5200280813b7cb.js",
-            "includes/entry.381eb9f65e1c03102e02.js"
+            "includes/entry.ce7b9593fe1e37102259.js",
+            "includes/entry.acaecaa2673ea835d4de.js"
         ]
     },
     ".files": {
-        "critical.css": "includes/extract.424.0d81f4aa1d99a444cbeb.css",
-        "critical.js": "includes/entry.0d81f4aa1d99a444cbeb.js",
+        "critical.css": "includes/extract.424.40f99eafcf05f6fc3188.css",
+        "critical.js": "includes/entry.40f99eafcf05f6fc3188.js",
         "__KOOT__CLIENT__RUN__FIRST__.js": "includes/entry.7667849c2425b7247d6e.js",
         "011bfca1897ab73fd1f958dff4379074.js": "includes/entry.b929e578a92c9a96e4f6.js",
         "c69eb116fb68a48bbb36e4d46b708d9f.js": "includes/entry.7948e2f440a4c476cdb1.js",
-        "client.js": "includes/entry.381eb9f65e1c03102e02.js",
+        "client.js": "includes/entry.acaecaa2673ea835d4de.js",
         "libs.js": "includes/entry.6208ec8529f18d3db772.js",
-        "vendors.js": "includes/entry.d24a3f5200280813b7cb.js",
-        "__KOOT__EXTRACT__CSS__.css": "includes/extract.all.2739854fa73df87ecfeacee2fb0780c7.small.css",
-        "__KOOT__EXTRACT__CSS__NO__PUBLIC__PATH__.css": "includes/extract.all.2739854fa73df87ecfeacee2fb0780c7.url-no-public-path.small.css"
+        "vendors.js": "includes/entry.ce7b9593fe1e37102259.js",
+        "__KOOT__EXTRACT__CSS__.css": "includes/extract.all.9b0c340e7c8af0813b44298985dfdfbd.small.css",
+        "__KOOT__EXTRACT__CSS__NO__PUBLIC__PATH__.css": "includes/extract.all.9b0c340e7c8af0813b44298985dfdfbd.url-no-public-path.small.css"
     },
     "service-worker": [
         "service-worker.js"
